@@ -26,6 +26,7 @@ import a1 from "../assets/images/card4.webp";
 import a2 from "../assets/images/card3.webp";
 import a3 from "../assets/images/m1.webp";
 import a4 from "../assets/images/l2.webp";
+import { Link } from "react-router-dom";
 
 // Error Boundary Component to Catch Rendering Errors
 class ErrorBoundary extends React.Component {
@@ -505,9 +506,9 @@ const AccommodationsPage = () => {
                         )}
                         <p className="text-gray-800 text-xl font-light">₱ {room.price.toLocaleString('en-US', { minimumFractionDigits: 2 })}</p>
                         <p className="text-gray-500 text-xs mb-4">Excludes taxes & fees</p>
-                        <button className="bg-gray-800 text-white px-6 py-2 rounded-full hover:bg-gray-900 transition-all duration-300 text-sm">
+                        <Link to="/booking" className="bg-gray-800 text-white px-6 py-2 rounded-full hover:bg-gray-900 transition-all duration-300 text-sm">
                           Book Now
-                        </button>
+                        </Link>
                         <p className="text-gray-500 text-xs mt-2">{room.details.available} Room{room.details.available > 1 ? 's' : ''} Available</p>
                       </div>
                     </div>
