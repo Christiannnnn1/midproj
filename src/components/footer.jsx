@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="mb-6">
             <div className="flex items-center mb-6">
               <img src="/src/assets/images/logo.webp" alt="Del Hamor" className="h-12 mr-3" />
-              <h3 className="text-xl font-bold">Residencia Del Hamor</h3>
+              <h3 className="text-xl font-bold">Christian Allen Reonal</h3>
             </div>
             <p className="text-gray-300 mb-6">
               Experience luxury and tranquility at our exclusive beachfront resort. 
